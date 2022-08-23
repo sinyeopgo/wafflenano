@@ -1,0 +1,10 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="namespace" default="wafflenano1"/>
+  
+  <!-- Map server -->
+  <group ns="$(arg namespace)">
+    <node pkg="repeatrun" name="remote_wafflenano" type="remote_wafflenano">
+    </node>
+  </group>
+</launch>
